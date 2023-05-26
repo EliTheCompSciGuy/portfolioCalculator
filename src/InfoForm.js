@@ -23,7 +23,7 @@ function InfoForm() {
         setErrorMessage('')}
 
       catch (error) {
-        setErrorMessage('Failed to fetch data. Please try again.')}
+        setErrorMessage('Failed to fetch data. Please try again and make sure you have a valid stock symbol.')}
       
       finally {
       setIsLoading(false)}
