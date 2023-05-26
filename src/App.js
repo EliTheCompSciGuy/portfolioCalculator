@@ -5,9 +5,10 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <nav className="navbar">
-        <div to="/" className="navbar-logo">
+    // bg-[rgb(245,225,193)]
+    <div className="App bg-orange-100 w-full h-screen">
+      <nav className="navbar bg-[rgb(59,59,76)] w-full">
+        <div to="/" className="navbar-logo  font-bold text-white text-left text-6xl font-size-20 p-3 w-full">
           Portfolio Calculator
           <i class="fab fa-firstdraft" />
         </div>
@@ -16,10 +17,7 @@ function App() {
         </div>
       </nav>
       <InfoForm />
-      <div
-        className="background">
-
-      </div>
+      
     </div>
   );
 }
