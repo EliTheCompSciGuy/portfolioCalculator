@@ -123,8 +123,8 @@ function InfoForm() {
           <form
             onSubmit={handleSubmit}>
               <div className='flex flex-none justify-center p-4 m-11 '>
-                <div >
-                  <label className='border border-black p-3 bg-lime-300 rounded-2xl mr-8'>
+                <div>
+                  <label className='flex border h-full border-black p-3 gap-2 bg-lime-300 rounded-2xl mr-8'>
                     <span className="standard-text">Start Date:</span>
                       <input
                           type="date"
@@ -136,7 +136,7 @@ function InfoForm() {
                   </label>
                 </div>
                 <div>
-                  <label className="p-3 border border-black bg-lime-300 rounded-2xl">
+                  <label className="flex gap-2 h-full p-3 border border-black bg-lime-300 rounded-2xl">
                     <span className="standard-text">Initial Balance:</span>
                       <input
                           type="number"
@@ -155,8 +155,8 @@ function InfoForm() {
               <div className="stock-group  content-center w-screen" >
               <div key={index} className='grid grid-cols-3 justify-around content-center w-screen'>
                 <div className='p-4'>
-                  <label className="block-label p-3 rounded-lg bg-[rgb(44,104,163)] border border-black ">
-                    <span className="standard-text">Stock Symbol:</span>
+                  <label className="block-label p-3 rounded-lg bg-[rgb(44,137,203)] border border-black ">
+                    <span className="standard-text pr-2">Stock Symbol:</span>
                     
                       <input
                         type="text"
@@ -169,7 +169,7 @@ function InfoForm() {
                       />
                       
                         <span
-                          className={`text-sm 'standard-text'`}
+                          className={`text-sm 'standard-text' pl-2`}
                         >
                           {stock.symbol.length}/5
                         </span>
@@ -180,7 +180,7 @@ function InfoForm() {
 
                 <div className='p-4'>
                   <label className="block-label p-3 rounded-lg bg-[rgb(136,211,236)] border border-black ">
-                    <span className="standard-text">Allocation (%):</span>
+                    <span className="standard-text pr-2">Allocation (%):</span>
                     <input
                       type="number"
                       className=' rounded-md text-center'
@@ -195,16 +195,14 @@ function InfoForm() {
                 </div>
 
                 {index > 0 && (
-                  <div className='p-4 '>
-                    <div >
+                  <div className='p-4'>
                       <button
-                        className='bg-red-500 border border-black min-w-fit rounded-lg '
+                        className='bg-red-500 border border-black min-w-fit rounded-lg px-2'
                         type="button"
                         onClick={() => removeStock(index)}
                         style={{ paddingLeft: '5px' }} >
                       Remove Stock
                       </button>
-                    </div>
                   </div>
                 )}
               </div>
